@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "retrieved_questions": 2556,
+  "evaluated_questions": 0,
+  "evaluation_status": "Deferred to Phase 4",
+  "total_passages": 6638,
+  "index_preparation_seconds": 0.8664245000109076,
+  "retrieval_seconds": 323.09522109961836,
+  "latency_seconds": {
+    "mean": 0.1264065810248898,
+    "median": 0.11951145000057295,
+    "p95": 0.1908685249654809,
+    "min": 0.041473800025414675,
+    "max": 1.7763866999885067
+  },
+  "evidence_matching_failures": [],
+  "retrieval_sha256": "9dc1a4824cac8048d2d43c4f34e16af3d926c3fb50fdc3eaf80488e5393fea2d"
+}

@@ -1,0 +1,59 @@
+{
+  "baselines": {
+    "bm25": {
+      "total_questions": 2556,
+      "evaluated_questions": 2255,
+      "excluded_no_evidence": 301,
+      "metrics_at_k": {
+        "5": {
+          "recall": 0.5786770140428676,
+          "mrr": 0.7447080561714704,
+          "all_hop_coverage": 0.28292682926829266
+        },
+        "10": {
+          "recall": 0.7049150036954924,
+          "mrr": 0.7544080174567972,
+          "all_hop_coverage": 0.4261640798226164
+        },
+        "20": {
+          "recall": 0.8167405764966762,
+          "mrr": 0.7562997365037196,
+          "all_hop_coverage": 0.5911308203991131
+        },
+        "50": {
+          "recall": 0.9092387287509257,
+          "mrr": 0.7566483994280665,
+          "all_hop_coverage": 0.7698447893569845
+        }
+      }
+    },
+    "dense": {
+      "total_questions": 2556,
+      "evaluated_questions": 2255,
+      "excluded_no_evidence": 301,
+      "metrics_at_k": {
+        "5": {
+          "recall": 0.5328898743532889,
+          "mrr": 0.7077014042867696,
+          "all_hop_coverage": 0.23015521064301553
+        },
+        "10": {
+          "recall": 0.6771618625277158,
+          "mrr": 0.718452820891844,
+          "all_hop_coverage": 0.38137472283813745
+        },
+        "20": {
+          "recall": 0.8000739098300091,
+          "mrr": 0.7204388803692882,
+          "all_hop_coverage": 0.553880266075388
+        },
+        "50": {
+          "recall": 0.928566149297859,
+          "mrr": 0.7208463100618588,
+          "all_hop_coverage": 0.8181818181818182
+        }
+      }
+    }
+  },
+  "evaluation_seconds": 1.2071380999987014
+}

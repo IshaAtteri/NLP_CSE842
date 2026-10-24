@@ -1,0 +1,28 @@
+﻿# Python environment and bytecode
+.venv/
+__pycache__/
+*.pyc
+
+# Local environment variables
+.env
+.env.*
+
+# Local documentation (excluded from this repository)
+*.[mM][dD]
+
+# Source, chunked, processed data and embedding caches
+/data/
+
+# Keep report artifacts: baseline runs, evaluation results, PNG/PDF figures.
+# Exclude temporary test outputs and exploratory CPU probes only.
+/results/*tests*/
+/results/baselines/multihoprag/dense_cpu_probe_*.json
+
+# Downloaded model weights
+*.pt
+*.pth
+*.safetensors
+
+# Tool caches
+.pytest_cache/
+.ipynb_checkpoints/

@@ -1,0 +1,37 @@
+{
+  "method": "BM25",
+  "implementation": "rank_bm25.BM25Okapi",
+  "k1": 1.5,
+  "b": 0.75,
+  "epsilon": 0.25,
+  "lexical_preprocessing": "Unicode casefold followed by Unicode alphanumeric runs (underscores excluded); punctuation splits tokens; no stopword removal or stemming; body text only.",
+  "tie_break": "passage_id ascending",
+  "created_at_utc": "2026-10-21T16:21:12.087511+00:00",
+  "passages_path": "data\\processed\\multihoprag_passages.jsonl",
+  "passages_sha256": "b2a722145e4df81d733b89b6e84e7cff4b6669a82335354180f0774f568d09bf",
+  "questions_path": "data\\raw\\MultiHopRAG.json",
+  "questions_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+  "top_k_requested": 50,
+  "top_k_available": 50,
+  "ranking_unit": "passage",
+  "question_id_policy": "Zero-based input question order",
+  "total_passages": 6638,
+  "total_documents": 609,
+  "total_questions": 2556,
+  "questions_without_evidence": 301,
+  "evidence_matching_failures": [],
+  "index_preparation_seconds": 0.8664245000109076,
+  "python": "3.13.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "rank-bm25": "0.2.2",
+    "numpy": "2.5.4"
+  },
+  "randomness": "None: exhaustive scoring and deterministic tie breaking",
+  "code_sha256": {
+    "src/hhsi/retrieval/bm25.py": "edd94e73ec0ae8a6147f15748efd405cd764feeec64072ef3a31f0d3bae4af9c",
+    "src/hhsi/retrieval/common.py": "612268ba0b745f52778804c445934b3a4b8a4556d81cd93daf97d03d609ba6d7",
+    "scripts/run_bm25.py": "680c058bb92060e603032a49a0043fce50b9c6c8545b7bed33df4adb4f21bf7b"
+  },
+  "latency_definition": "Query preprocessing, exhaustive scoring, sorting and result construction; excludes file I/O."
+}
