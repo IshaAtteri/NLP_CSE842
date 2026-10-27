@@ -1,0 +1,85 @@
+{
+  "dataset": "multihoprag",
+  "spacy_version": "3.8.16",
+  "model": "en_core_web_sm",
+  "model_version": "3.8.0",
+  "tokenizer_mode": "default English tokenizer; saved tokenizer excluded",
+  "retained_entity_types": [
+    "EVENT",
+    "FAC",
+    "GPE",
+    "LOC",
+    "NORP",
+    "ORG",
+    "PERSON",
+    "PRODUCT",
+    "WORK_OF_ART"
+  ],
+  "normalization": "NFKC + casefold + whitespace normalization",
+  "passage_count": 4669,
+  "passages_without_retained_entities": 13,
+  "entity_mention_count": 84321,
+  "mentions_by_type": {
+    "ORG": 32695,
+    "PERSON": 28802,
+    "EVENT": 1122,
+    "WORK_OF_ART": 1326,
+    "GPE": 13400,
+    "PRODUCT": 1576,
+    "NORP": 3062,
+    "FAC": 1028,
+    "LOC": 1310
+  },
+  "examples": [
+    {
+      "passage_id": "mhr_0000_p0000",
+      "entity_set": [
+        "amazon",
+        "black friday",
+        "cyber monday",
+        "cyber weekend",
+        "fire tv",
+        "gift",
+        "kindle",
+        "kindle deals apple",
+        "lego",
+        "smart",
+        "tablet",
+        "vacuum"
+      ]
+    },
+    {
+      "passage_id": "mhr_0000_p0001",
+      "entity_set": [
+        "alexa",
+        "amazon",
+        "an echo show",
+        "apple",
+        "audible premium plus",
+        "black friday",
+        "cyber monday",
+        "ipad",
+        "kindle",
+        "retina"
+      ]
+    },
+    {
+      "passage_id": "mhr_0000_p0002",
+      "entity_set": [
+        "a14 bionic",
+        "airpods macbook mac",
+        "alexa",
+        "amazon",
+        "apple",
+        "cyber monday",
+        "intel core",
+        "ipad",
+        "macbook air",
+        "macbooks",
+        "microsoft surface laptop",
+        "retina",
+        "usb"
+      ]
+    }
+  ]
+}
