@@ -1,0 +1,80 @@
+{
+  "dataset": "hotpotqa_validation",
+  "spacy_version": "3.8.16",
+  "model": "en_core_web_sm",
+  "model_version": "3.8.0",
+  "tokenizer_mode": "default English tokenizer; saved tokenizer excluded",
+  "retained_entity_types": [
+    "EVENT",
+    "FAC",
+    "GPE",
+    "LOC",
+    "NORP",
+    "ORG",
+    "PERSON",
+    "PRODUCT",
+    "WORK_OF_ART"
+  ],
+  "normalization": "NFKC + casefold + whitespace normalization",
+  "passage_count": 67065,
+  "passages_without_retained_entities": 733,
+  "entity_mention_count": 706995,
+  "mentions_by_type": {
+    "PERSON": 216030,
+    "NORP": 65167,
+    "ORG": 187636,
+    "GPE": 140592,
+    "WORK_OF_ART": 45119,
+    "LOC": 18443,
+    "FAC": 15367,
+    "PRODUCT": 7181,
+    "EVENT": 11460
+  },
+  "examples": [
+    {
+      "passage_id": "hp_ba03283d55e2bf4ec686c6c71884ef9b29fd37adb2a248f4f68d7807d969024d_p0000",
+      "entity_set": [
+        "american",
+        "bela lugosi",
+        "bill murray",
+        "ed wood",
+        "jeffrey jones",
+        "johnny depp",
+        "lisa marie",
+        "martin landau",
+        "patricia arquette",
+        "sarah jessica parker",
+        "tim burton",
+        "wood"
+      ]
+    },
+    {
+      "passage_id": "hp_78505caa56ac5684b6c4c0d01e438ec79be6b288ac6944a37e4fd079fa964695_p0000",
+      "entity_set": [
+        "american",
+        "california",
+        "deliver us from evil",
+        "doctor strange",
+        "los angeles",
+        "scott derrickson",
+        "sinister",
+        "the exorcism of emily rose"
+      ]
+    },
+    {
+      "passage_id": "hp_8351ca1159a13774e7111654eb0639dd715f7be42c246e6c5c0a601ec136d361_p0000",
+      "entity_set": [
+        "arkansas",
+        "cdp",
+        "ed wood sr",
+        "ed wood sr.",
+        "little rock",
+        "pulaski county",
+        "the united states",
+        "the wood plantation",
+        "woodson",
+        "woodson lake"
+      ]
+    }
+  ]
+}
