@@ -1,2 +1,5 @@
 huggingface_hub
 pyarrow
+sentence-transformers
+numpy
+spacy
