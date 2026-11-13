@@ -49,3 +49,7 @@ torch==2.14.1
 
 # Baseline research figures
 matplotlib==3.11.2
+
+# Exact hierarchical index construction and memory preflight
+scipy==1.18.1
+psutil==7.2.2

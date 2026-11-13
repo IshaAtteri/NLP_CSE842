@@ -1,0 +1,80 @@
+{
+  "purpose": "Illustrative similarity examples, not retrieval performance measurements",
+  "selection": "Across documents, first 12 passages as anchors; maximum cosine with shared entities, maximum cosine without shared entities, minimum cosine without shared entities; first encountered tie wins",
+  "alpha_note": "0.5 and 0.7 are illustrative settings, not test-set tuned",
+  "input_hashes": {
+    "data\\processed\\multihoprag_passages.jsonl": "b2a722145e4df81d733b89b6e84e7cff4b6669a82335354180f0774f568d09bf",
+    "data\\processed\\entities\\multihoprag_entities.jsonl": "fc858562635af7f37c87be8944b24802945855ff31071e64c1e867b10ccddef5",
+    "data\\processed\\embeddings\\multihoprag_bge_base_v1_5.npy": "6be8a8a31a05ee9be785caa2033eff4a5f09ff596430654994202eef5c3b98f5"
+  },
+  "validated_passages": 6638,
+  "embedding_shape": [
+    6638,
+    768
+  ],
+  "examples": [
+    {
+      "passage_id_a": "doc_0000_chunk_0000",
+      "passage_id_b": "doc_0250_chunk_0000",
+      "shared_entities": [
+        "amazon",
+        "black friday"
+      ],
+      "semantic": 0.8464034573076306,
+      "entity": 0.16666666666666666,
+      "alpha": 0.7,
+      "dissimilarity": 0.3575175798846586,
+      "category": "shared_named_entities",
+      "hybrid_alpha_0_7": 0.6424824201153414,
+      "hybrid_alpha_0_5": 0.5065350619871486,
+      "passage_a": {
+        "title": "200+ of the best deals from Amazon's Cyber Monday sale",
+        "text": "Table of Contents Table of Contents Echo, Fire TV, and Kindle deals Apple deals TV deals Laptop deals Headphone and earbud deals Tablet deals Gaming deals Speaker deals Vacuum deals Kitchen deals Smart home deals Fitness deals Beauty tech deals Drone deals Camera deals Lego deals Gift card deals\n\nUPDATE: Nov. 27, 2023, 5:00 a.m. EST This post has been updated with all of the latest Cyber Monday deals available at Amazon. Amazon is dragging out the year's biggest shopping holiday(s) into 11 days of deals. The retail giant began its Black Friday sale in the early morning of Friday, Nov. 17 (a week ahead of schedule) and was on top of making the switch to Cyber Monday language in the wee hours of Saturday, Nov. 25. Official Cyber Monday mode, which is currently on through Monday, Nov. 27, includes both a ton of deals carried over from Black Friday plus some new ones. We're curating a running list of Amazon's best Cyber Weekend deals, spotlighting some of our favorites and noting when good deals inevitably sell out."
+      },
+      "passage_b": {
+        "title": "The 30 best Amazon Prime Day deals for October 2023",
+        "text": "Engadget has been testing and reviewing consumer tech since 2004. Our stories may include affiliate links; if you buy something through a link, we may earn a commission. Read more about how we evaluate products. Here are the best Prime Day deals we could find gathered in one place. Amazon's second Prime Day-like sale event for 2023 kicked off in the wee hours this morning, and it's turning out to be a great opportunity to get holiday shopping done early. Or, if you missed out on any of the deals from Prime Day in July, this year's \"Prime Big Deal Days\" will let you make up for that. The sale has brought back many of the same steep discounts we saw during the summer as well as new sales. We've also put together category roundups for deals on headphones, tablets, TVs, video games and other gadgets. If you've got your gift list handy, now's a good time to start checking it off so you won't be pressed for time or funds when Black Friday and Cyber Monday come around next month. A few deals are just for Prime members, but many are open to anyone looking to save."
+      }
+    },
+    {
+      "passage_id_a": "doc_0001_chunk_0001",
+      "passage_id_b": "doc_0087_chunk_0000",
+      "shared_entities": [],
+      "semantic": 0.793397743597672,
+      "entity": 0.0,
+      "alpha": 0.7,
+      "dissimilarity": 0.4446215794816296,
+      "category": "related_without_shared_entities",
+      "hybrid_alpha_0_7": 0.5553784205183704,
+      "hybrid_alpha_0_5": 0.396698871798836,
+      "passage_a": {
+        "title": "ASX set to drop as Wall Street’s September slump deepens",
+        "text": "Gold miners Newcrest (down 2.1 per cent) and Evolution (down 3.5 per cent) were also among the biggest large-cap decliners after the spot gold price dropped 0.9 per cent overnight. Information technology (down 1.1 per cent) was the weakest sector on the local bourse with WiseTech losing 1.4 per cent. The lowdown\n\nNovus Capital senior client adviser Gary Glover said the Australian sharemarket was surprisingly resilient following a negative lead from Wall Street and the latest inflation data, with markets starting to wake up to the fact that interest rates could stay higher for longer. “ Considering the damage overnight in the US, Australian markets held on pretty well,” he said. “ I thought it would be a bigger down day across the board.” Glover said the market was volatile but quite range-bound, similar to previous periods of high inflation in the 1940s and 1970s. Elsewhere, Wall Street’s ugly September got even worse on Tuesday, as a sharp drop for stocks brought them back to where they were in June. The S&P 500 tumbled 1.5 per cent for its fifth loss in the last six days."
+      },
+      "passage_b": {
+        "title": "ASX set to open lower as Wall Street closes September with more losses",
+        "text": "Treasury Wine Estates (down 1.9 per cent) and Woolworths (down 1.2 per cent) dragged the consumer staples sector (down 1.1 per cent) lower. Pilbara Minerals (down 2.1 per cent) and Qantas (down 1.5 per cent) were also among the biggest large-cap decliners. The lowdown Stronger iron ore prices helped to bolster the local bourse on Monday but not enough to offset the prospect of higher-for-longer interest rates ahead of the Reserve Bank’s meeting on Tuesday. Iron ore heavyweights advanced after the iron ore price increased 1.4 per cent overnight with lithium miner Liontown resisting the downward momentum of lithium prices, which dropped to the lowest level in two years. Most sectors traded lower but interest-rate sensitive sectors including healthcare and consumer companies were among the weakest amid expectations that the RBA will keep rates on hold in October. The National Australia Bank has forecast another rate hike to 4.35 per cent in November. Elsewhere, Wall Street closed out its worst month and quarter of the year with more losses on Friday. The S&P 500 slipped 0.3 per cent and the majority of stocks within the index sank."
+      }
+    },
+    {
+      "passage_id_a": "doc_0000_chunk_0000",
+      "passage_id_b": "doc_0165_chunk_0047",
+      "shared_entities": [],
+      "semantic": 0.2382746065115822,
+      "entity": 0.0,
+      "alpha": 0.7,
+      "dissimilarity": 0.8332077754418925,
+      "category": "relatively_unrelated",
+      "hybrid_alpha_0_7": 0.16679222455810752,
+      "hybrid_alpha_0_5": 0.1191373032557911,
+      "passage_a": {
+        "title": "200+ of the best deals from Amazon's Cyber Monday sale",
+        "text": "Table of Contents Table of Contents Echo, Fire TV, and Kindle deals Apple deals TV deals Laptop deals Headphone and earbud deals Tablet deals Gaming deals Speaker deals Vacuum deals Kitchen deals Smart home deals Fitness deals Beauty tech deals Drone deals Camera deals Lego deals Gift card deals\n\nUPDATE: Nov. 27, 2023, 5:00 a.m. EST This post has been updated with all of the latest Cyber Monday deals available at Amazon. Amazon is dragging out the year's biggest shopping holiday(s) into 11 days of deals. The retail giant began its Black Friday sale in the early morning of Friday, Nov. 17 (a week ahead of schedule) and was on top of making the switch to Cyber Monday language in the wee hours of Saturday, Nov. 25. Official Cyber Monday mode, which is currently on through Monday, Nov. 27, includes both a ton of deals carried over from Black Friday plus some new ones. We're curating a running list of Amazon's best Cyber Weekend deals, spotlighting some of our favorites and noting when good deals inevitably sell out."
+      },
+      "passage_b": {
+        "title": "The Halloween Countdown: 31 days of horror to watch",
+        "text": "It may not have been the Exorcist sequel that audiences at the time wanted, but it’s still a damn fine picture. — TE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+﻿\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\begin{document}
+
+\section*{Abstract}
+\begin{itemize}
+\item Completed: passage preparation, BM25, flat BGE retrieval, and baseline evaluation.
+\item MultiHop-RAG: 609 articles, 6,638 passages, 2,556 questions.
+\item Recall@50: BM25 0.9092; dense 0.9286.
+\item HHSI and HotpotQA experiments remain planned.
+\end{itemize}
+
+\section*{1. Introduction: research questions}
+\begin{itemize}
+\item Does combining semantic similarity and entity overlap improve evidence coverage?
+\item Does multi-branch retrieval recover more supporting articles than flat retrieval?
+\item What are the retrieval gains and indexing/search costs?
+\end{itemize}
+
+
+\section*{2. Related work}
+\begin{itemize}
+\item Review BM25 and Dense Passage Retrieval for flat retrieval background.
+\item Review HotpotQA and MultiHop-RAG for multi-hop evidence retrieval.
+\item Compare RAPTOR, SiReRAG, HiRAG, and HippoRAG with proposed HHSI.
+\item RAPTOR comparison: discuss hierarchy construction, summaries, and entity signals.
+\item Verify paper details before claiming missing entity awareness or hierarchy.
+\item Present HHSI benefits as hypotheses; no HHSI results exist yet.
+\end{itemize}
+
+\section*{3. Methodology}
+\subsection*{Passage construction --- completed}
+\begin{itemize}
+\item Chunk article bodies; retain titles and source metadata separately.
+\item Maximum 256 BGE tokens, including special tokens.
+\item Whole-sentence overlap up to 32 tokens; split long sentences when needed.
+\item Use spaCy blank English with a rule-based sentencizer.
+\item Keep passage IDs, document IDs, and URLs for source mapping.
+\item Validated all 609 articles; no coverage failures.
+\end{itemize}
+
+\subsection*{Semantic and entity representations}
+\begin{itemize}
+\item Completed: BAAI/bge-base-en-v1.5; 768-dimensional embeddings.
+\item CLS pooling, L2 normalization, exact cosine search; query instruction prefix.
+\item Entity extraction is pending; current spaCy pipeline performs segmentation only.
+\item Specify NER model, retained entity types, and string normalization after implementation.
+\end{itemize}
+
+\subsection*{Hierarchy and retrieval --- proposed}
+\begin{itemize}
+\item Draft design: cosine similarity plus entity Jaccard overlap.
+\item Draft hierarchy: average-linkage clustering, centroid vectors, aggregated entity sets.
+\item Still define subsets, stopping rules, depth, and empty-entity handling.
+\item Draft search: retain multiple branches, reach passages, then rerank.
+\item Still define beam width and final reranking score.
+\item Alpha controls index similarity; lambda controls query-to-node scoring.
+\item Neither weight has been selected or tested.
+\item Proposed tuning: compare several weights on held-out development questions.
+\item Include semantic-only and entity-only settings; freeze choices before final testing.
+\end{itemize}
+
+\subsection*{Evaluation: datasets}
+\begin{itemize}
+\item Completed dataset: MultiHop-RAG news articles and multi-hop questions.
+\item Evaluate 2,255 questions with evidence; exclude 301 null queries from metrics.
+\item Null queries remain in retrieval outputs with null evaluation scores.
+\item HotpotQA Wikipedia experiments are pending; specify setup and split later.
+\end{itemize}
+
+\subsection*{Evaluation: metrics and comparisons}
+\begin{itemize}
+\item Cutoffs: top 5, 10, 20, and 50 passages.
+\item Recall@k: fraction of gold article URLs recovered.
+\item MRR@k: reciprocal rank of the first relevant passage; zero if absent.
+\item All-Hop Coverage@k: whether every gold article URL is recovered.
+\item Average across evaluated questions; duplicate articles still occupy passage ranks.
+\item URL matching measures article coverage, not exact supporting-fact retrieval.
+\item Completed comparisons: BM25 and flat BGE on the same passages and questions.
+\item Pending: RAPTOR, HHSI, and downstream QA with EM and token F1.
+\end{itemize}
+
+\subsection*{Design limitations}
+\begin{itemize}
+\item Jaccard gives interpretable entity overlap; missed entities and aliases can hurt it.
+\item Dense similarity may complement missing entity overlap; test this claim.
+\item Measure clustering time and memory before claiming scalability.
+\end{itemize}
+
+\section*{4. Experimental results}
+\begin{itemize}
+\item Add a MultiHop-RAG table using the following saved results.
+\item Values below: Recall@k / MRR@k / All-Hop Coverage@k.
+\item BM25: k=5: 0.5787 / 0.7447 / 0.2829; k=10: 0.7049 / 0.7544 / 0.4262.
+\item BM25: k=20: 0.8167 / 0.7563 / 0.5911; k=50: 0.9092 / 0.7566 / 0.7698.
+\item Dense: k=5: 0.5329 / 0.7077 / 0.2302; k=10: 0.6772 / 0.7185 / 0.3814.
+\item Dense: k=20: 0.8001 / 0.7204 / 0.5539; k=50: 0.9286 / 0.7208 / 0.8182.
+\item BM25 leads at smaller cutoffs; dense leads Recall and All-Hop Coverage at 50.
+\item Label MRR@50 explicitly; unrestricted MRR was not measured.
+\item Mark HHSI, RAPTOR, HotpotQA, and QA scores as pending.
+\end{itemize}
+
+\section*{5. Planned analysis}
+\begin{itemize}
+\item Implement NER, hybrid hierarchy, and multi-branch search.
+\item Test alpha, lambda, beam width, and hierarchy settings.
+\item Compare semantic-only, entity-only, and hybrid variants.
+\item Add RAPTOR, HotpotQA, and downstream QA experiments.
+\item Inspect missed evidence; compare build time, memory, and comparable query latency.
+\end{itemize}
+
+\section*{6. Team biographies and work distribution}
+\begin{itemize}
+\item Check the midterm rubric before removing this section.
+\item If required, keep brief contribution bullets; distinguish completed and assigned work.
+\end{itemize}
+
+% Evidence: repository implementation and saved evaluation summary:
+% results/evaluation/multihoprag/20261024T143929Z_17c3e297/summary.json
+\end{document}
