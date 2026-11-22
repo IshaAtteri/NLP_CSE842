@@ -5,7 +5,7 @@
   "input_hashes": {
     "data\\processed\\multihoprag_passages.jsonl": "b2a722145e4df81d733b89b6e84e7cff4b6669a82335354180f0774f568d09bf",
     "data\\processed\\entities\\multihoprag_entities.jsonl": "fc858562635af7f37c87be8944b24802945855ff31071e64c1e867b10ccddef5",
-    "data\\processed\\embeddings\\multihoprag_bge_base_v1_5.npy": "6be8a8a31a05ee9be785caa2033eff4a5f09ff596430654994202eef5c3b98f5"
+    "data\\processed\\embeddings\\multihoprag_bge_base_v1_5.npy": "8ded4381cd2a672cdb659db5ce3931e9babdb1d3246564d70e894e84f71cade5"
   },
   "validated_passages": 6638,
   "embedding_shape": [
@@ -20,13 +20,13 @@
         "amazon",
         "black friday"
       ],
-      "semantic": 0.8464034573076306,
+      "semantic": 0.8464032195429311,
       "entity": 0.16666666666666666,
       "alpha": 0.7,
-      "dissimilarity": 0.3575175798846586,
+      "dissimilarity": 0.35751774631994826,
       "category": "shared_named_entities",
-      "hybrid_alpha_0_7": 0.6424824201153414,
-      "hybrid_alpha_0_5": 0.5065350619871486,
+      "hybrid_alpha_0_7": 0.6424822536800517,
+      "hybrid_alpha_0_5": 0.5065349431047989,
       "passage_a": {
         "title": "200+ of the best deals from Amazon's Cyber Monday sale",
         "text": "Table of Contents Table of Contents Echo, Fire TV, and Kindle deals Apple deals TV deals Laptop deals Headphone and earbud deals Tablet deals Gaming deals Speaker deals Vacuum deals Kitchen deals Smart home deals Fitness deals Beauty tech deals Drone deals Camera deals Lego deals Gift card deals\n\nUPDATE: Nov. 27, 2023, 5:00 a.m. EST This post has been updated with all of the latest Cyber Monday deals available at Amazon. Amazon is dragging out the year's biggest shopping holiday(s) into 11 days of deals. The retail giant began its Black Friday sale in the early morning of Friday, Nov. 17 (a week ahead of schedule) and was on top of making the switch to Cyber Monday language in the wee hours of Saturday, Nov. 25. Official Cyber Monday mode, which is currently on through Monday, Nov. 27, includes both a ton of deals carried over from Black Friday plus some new ones. We're curating a running list of Amazon's best Cyber Weekend deals, spotlighting some of our favorites and noting when good deals inevitably sell out."
@@ -40,13 +40,13 @@
       "passage_id_a": "doc_0001_chunk_0001",
       "passage_id_b": "doc_0087_chunk_0000",
       "shared_entities": [],
-      "semantic": 0.793397743597672,
+      "semantic": 0.793397366503426,
       "entity": 0.0,
       "alpha": 0.7,
-      "dissimilarity": 0.4446215794816296,
+      "dissimilarity": 0.4446218434476019,
       "category": "related_without_shared_entities",
-      "hybrid_alpha_0_7": 0.5553784205183704,
-      "hybrid_alpha_0_5": 0.396698871798836,
+      "hybrid_alpha_0_7": 0.5553781565523981,
+      "hybrid_alpha_0_5": 0.396698683251713,
       "passage_a": {
         "title": "ASX set to drop as Wall Street’s September slump deepens",
         "text": "Gold miners Newcrest (down 2.1 per cent) and Evolution (down 3.5 per cent) were also among the biggest large-cap decliners after the spot gold price dropped 0.9 per cent overnight. Information technology (down 1.1 per cent) was the weakest sector on the local bourse with WiseTech losing 1.4 per cent. The lowdown\n\nNovus Capital senior client adviser Gary Glover said the Australian sharemarket was surprisingly resilient following a negative lead from Wall Street and the latest inflation data, with markets starting to wake up to the fact that interest rates could stay higher for longer. “ Considering the damage overnight in the US, Australian markets held on pretty well,” he said. “ I thought it would be a bigger down day across the board.” Glover said the market was volatile but quite range-bound, similar to previous periods of high inflation in the 1940s and 1970s. Elsewhere, Wall Street’s ugly September got even worse on Tuesday, as a sharp drop for stocks brought them back to where they were in June. The S&P 500 tumbled 1.5 per cent for its fifth loss in the last six days."
@@ -60,13 +60,13 @@
       "passage_id_a": "doc_0000_chunk_0000",
       "passage_id_b": "doc_0165_chunk_0047",
       "shared_entities": [],
-      "semantic": 0.2382746065115822,
+      "semantic": 0.2382736794966156,
       "entity": 0.0,
       "alpha": 0.7,
-      "dissimilarity": 0.8332077754418925,
+      "dissimilarity": 0.8332084243523691,
       "category": "relatively_unrelated",
-      "hybrid_alpha_0_7": 0.16679222455810752,
-      "hybrid_alpha_0_5": 0.1191373032557911,
+      "hybrid_alpha_0_7": 0.16679157564763092,
+      "hybrid_alpha_0_5": 0.1191368397483078,
       "passage_a": {
         "title": "200+ of the best deals from Amazon's Cyber Monday sale",
         "text": "Table of Contents Table of Contents Echo, Fire TV, and Kindle deals Apple deals TV deals Laptop deals Headphone and earbud deals Tablet deals Gaming deals Speaker deals Vacuum deals Kitchen deals Smart home deals Fitness deals Beauty tech deals Drone deals Camera deals Lego deals Gift card deals\n\nUPDATE: Nov. 27, 2023, 5:00 a.m. EST This post has been updated with all of the latest Cyber Monday deals available at Amazon. Amazon is dragging out the year's biggest shopping holiday(s) into 11 days of deals. The retail giant began its Black Friday sale in the early morning of Friday, Nov. 17 (a week ahead of schedule) and was on top of making the switch to Cyber Monday language in the wee hours of Saturday, Nov. 25. Official Cyber Monday mode, which is currently on through Monday, Nov. 27, includes both a ton of deals carried over from Black Friday plus some new ones. We're curating a running list of Amazon's best Cyber Weekend deals, spotlighting some of our favorites and noting when good deals inevitably sell out."

@@ -44,8 +44,7 @@ spacy==3.8.16
 # Lexical retrieval baseline
 rank-bm25==0.2.2
 
-# Flat BGE encoder (CPU wheel installed from the official PyTorch index)
-torch==2.14.1
+torch==2.11.0
 
 # Baseline research figures
 matplotlib==3.11.2

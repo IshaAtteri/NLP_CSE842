@@ -1,6 +1,6 @@
 {
   "method": "Flat BGE",
-  "created_at_utc": "2026-10-22T15:24:11.902583+00:00",
+  "created_at_utc": "2026-11-22T21:08:45.118643+00:00",
   "encoder": {
     "model_name": "BAAI/bge-base-en-v1.5",
     "resolved_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
@@ -61,32 +61,32 @@
     "query_max_tokens": 512,
     "attention_implementation": "sdpa",
     "packages": {
-      "torch": "2.14.1+cpu",
+      "torch": "2.11.0+cu128",
       "transformers": "5.20.1",
       "tokenizers": "0.23.3",
       "numpy": "2.5.4"
     }
   },
   "inference": {
-    "device": "cpu",
-    "cpu_threads": 12,
+    "device": "cuda",
+    "cpu_threads": 4,
     "seed": 0,
     "deterministic_algorithms": true,
     "eval": true,
     "inference_mode": true,
     "autocast": false,
-    "cuda_available": false,
-    "hardware": "CPU"
+    "cuda_available": true,
+    "hardware": "NVIDIA GeForce RTX 4050 Laptop GPU"
   },
-  "requested_revision": "a5beb1e3e68b9ab74eb54cfd186867f64f240e1a",
+  "requested_revision": "main",
   "passages_path": "data\\processed\\multihoprag_passages.jsonl",
   "passages_sha256": "b2a722145e4df81d733b89b6e84e7cff4b6669a82335354180f0774f568d09bf",
-  "questions_path": "data\\raw\\MultiHopRAG.json",
+  "questions_path": "C:\\Users\\rprab\\Projects\\NLP_CSE842\\data\\multihoprag\\MultiHopRAG.json",
   "questions_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
   "cache_path": "data\\processed\\embeddings\\multihoprag_bge_base_v1_5.npy",
   "cache_metadata_path": "data\\processed\\embeddings\\multihoprag_bge_base_v1_5_metadata.json",
-  "passage_batch_size": 8,
-  "query_batch_size": 16,
+  "passage_batch_size": 16,
+  "query_batch_size": 32,
   "top_k_requested": 50,
   "top_k_available": 50,
   "total_passages": 6638,
@@ -98,8 +98,8 @@
   "ranking": "Exact float32 CPU dot products over all L2-normalized passage vectors",
   "tie_break": "passage_id ascending; original passage embedding row order preserved",
   "question_id_policy": "Zero-based original question order",
-  "python": "3.13.4",
-  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.6",
+  "platform": "Windows-11-10.0.26300-SP0",
   "code_sha256": {
     "src/hhsi/retrieval/common.py": "612268ba0b745f52778804c445934b3a4b8a4556d81cd93daf97d03d609ba6d7",
     "src/hhsi/retrieval/dense.py": "58487e8e1b284f5487574074762b93dd17de7932ad9f2c62eb252ff92e5560b8",

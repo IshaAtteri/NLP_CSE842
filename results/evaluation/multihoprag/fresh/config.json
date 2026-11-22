@@ -1,5 +1,5 @@
 {
-  "created_at_utc": "2026-10-24T14:39:29.621484+00:00",
+  "created_at_utc": "2026-11-22T21:11:04.843417+00:00",
   "cutoffs": [
     5,
     10,
@@ -19,12 +19,12 @@
   },
   "inputs": {
     "bm25": {
-      "directory": "results\\baselines\\multihoprag\\bm25_20261021T162111_053749Z_3e0e3601",
-      "retrieval_sha256": "9dc1a4824cac8048d2d43c4f34e16af3d926c3fb50fdc3eaf80488e5393fea2d"
+      "directory": "C:\\Users\\rprab\\Projects\\NLP_CSE842\\results\\baselines\\multihoprag\\bm25_fresh",
+      "retrieval_sha256": "75e7faba725a99dc8abb57fb7ecc8eee5e63b619d40f94497c3c5400f8b5bbc9"
     },
     "dense": {
-      "directory": "results\\baselines\\multihoprag\\dense_20261022T152341_294173Z_cddb4578",
-      "retrieval_sha256": "a913e696be400c1ed10e28c721e1198971845be7a0a00a10b1b694790f3c0f9c"
+      "directory": "C:\\Users\\rprab\\Projects\\NLP_CSE842\\results\\baselines\\multihoprag\\dense_fresh",
+      "retrieval_sha256": "be7e29940147f35168b114bdc16f8d43af0bd3089c791e5daf36f212ace00e21"
     }
   },
   "code_sha256": {

@@ -22,6 +22,9 @@ __pycache__/
 *.pt
 *.pth
 *.safetensors
+*.gguf
+/.local/
+/models/
 
 # Tool caches
 .pytest_cache/

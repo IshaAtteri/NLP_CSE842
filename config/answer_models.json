@@ -1,0 +1,33 @@
+{
+  "default_profile": "llama",
+  "server_exe": "C:\\llama-cuda\\llama-server.exe",
+  "base_url": "http://127.0.0.1:8080/v1",
+  "context_tokens": 2048,
+  "max_output_tokens": 128,
+  "temperature": 0,
+  "top_k": 5,
+  "common_server_args": [
+    "--parallel", "1",
+    "--batch-size", "256",
+    "--ubatch-size", "64",
+    "--cache-type-k", "q4_0",
+    "--cache-type-v", "q4_0",
+    "--flash-attn", "on",
+    "--load-mode", "none",
+    "-t", "6",
+    "--threads-batch", "12",
+    "--port", "8080"
+  ],
+  "profiles": {
+    "llama": {
+      "model_path": "C:\\Users\\rprab\\.lmstudio\\models\\local\\Llama-3.1-8B-Instruct\\Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+      "native_context_tokens": 131072,
+      "server_args": ["-ngl", "33"]
+    },
+    "qwen35b": {
+      "model_path": "C:\\Users\\rprab\\.lmstudio\\models\\mudler\\Qwen3.6-35B-A3B-APEX-GGUF\\Qwen3.6-35B-A3B-APEX-I-Compact.gguf",
+      "native_context_tokens": 262144,
+      "server_args": ["-ngl", "85", "--n-cpu-moe", "36", "--reasoning", "off"]
+    }
+  }
+}
